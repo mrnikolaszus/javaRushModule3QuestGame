@@ -56,19 +56,7 @@ public class Player {
                 .map(Map.Entry::getValue)
                 .collect(Collectors.toList());
     }
-    public Sign checkDeath() {
-        List<List<Integer>> winPossibilities = List.of(
-                List.of(0, 1, 2)
-        );
 
-        for (List<Integer> winPossibility : winPossibilities) {
-            if (field.get(winPossibility.get(0)) == field.get(winPossibility.get(1))
-                    && field.get(winPossibility.get(0)) == field.get(winPossibility.get(2))) {
-                return field.get(winPossibility.get(0));
-            }
-        }
-        return Sign.DEATH;
-    }
 
 
 }

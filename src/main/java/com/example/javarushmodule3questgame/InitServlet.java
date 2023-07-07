@@ -1,6 +1,7 @@
 package com.example.javarushmodule3questgame;
 
 
+import com.example.javarushmodule3questgame.text.AllBlocks;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,17 +23,30 @@ public class InitServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         var session = req.getSession(true);
         var field = new Player();
+        var blocks = new AllBlocks();
         session.setAttribute("alive", Sign.LIFE);
         var data = field.getFieldData();
         var statusSign = Sign.LIFE;
         session.setAttribute("field", field);
         session.setAttribute("data", data);
         session.setAttribute("status", statusSign);
-        log.error("game started " + this.getServletName());
-        log.error("game started " + this.getServletName());
-        log.error("game started " + this.getServletName());
+        session.setAttribute("text2", "");
+        session.setAttribute("blocks", blocks);
+        session.setAttribute("currentBlock", blocks.getField().get(0).getBlock());
+        session.setAttribute("buttons", blocks.getField().get(0).getButtons());
+        session.setAttribute("text", blocks.getField().get(0).getText());
+        session.setAttribute("button1", blocks.getField().get(0).getButton1());
+        session.setAttribute("button2", blocks.getField().get(0).getButton2());
+        session.setAttribute("button3", blocks.getField().get(0).getButton3());
 
-        getServletContext().getRequestDispatcher("/main.jsp").forward(req, resp);
+
+
+
+
+        log.error("game started " + this.getServletName());
+        resp.sendRedirect("/main.jsp");
+
+//        getServletContext().getRequestDispatcher("/main.jsp").forward(req, resp);
 
 
     }
