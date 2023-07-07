@@ -51,7 +51,7 @@
             <c:if test="${buttons == 3}">
             <table class="tableButtons">
                 <tr>
-                    <td > <button class="answerButton" onclick="window.location='/logic?click=1'">${button1}</button></td>
+                    <td > <button  class="answerButton" onclick="window.location='/logic?click=1'">${button1}</button></td>
                     <td > <button class="answerButton" onclick="window.location='/logic?click=2'">${button2}</button></td>
                     <td > <button class="answerButton" onclick="window.location='/logic?click=3'">${button3}</button></td>
                 </tr>

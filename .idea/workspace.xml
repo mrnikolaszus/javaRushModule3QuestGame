@@ -9,15 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eba3d6b-9685-4a0c-9559-a4670404e687" name="Changes" comment="Commit 001, bug with /start init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/AllBlocks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/Block.java" afterDir="false" />
+    <list default="true" id="9eba3d6b-9685-4a0c-9559-a4670404e687" name="Changes" comment="1. Choosing answers logic-starter added - LogicServlet&#10;2. HitPoints logic added - DmgServlet&#10;3. container for quest-text added - AllBlocks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/DmgServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/DmgServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/InitServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/LogicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/LogicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/AllBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/AllBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/Block.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,24 +54,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MSIN/IdeaProjects/javaRushModule3QuestGame/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MSIN/IdeaProjects/javaRushModule3QuestGame/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MSIN\IdeaProjects\javaRushModule3QuestGame\src\main\resources" />
@@ -181,7 +176,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688658284310</updated>
-      <workItem from="1688658285409" duration="33781000" />
+      <workItem from="1688658285409" duration="34863000" />
+      <workItem from="1688760211770" duration="4719000" />
     </task>
     <task id="LOCAL-00001" summary="Git init, sorry late init">
       <created>1688724859003</created>
@@ -197,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688731154166</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1. Choosing answers logic-starter added - LogicServlet&#10;2. HitPoints logic added - DmgServlet&#10;3. container for quest-text added - AllBlocks">
+      <created>1688752258623</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688752258623</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +220,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Git init, sorry late init" />
     <MESSAGE value="Commit 001, bug with /start init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 001, bug with /start init" />
+    <MESSAGE value="1. Choosing answers logic-starter added - LogicServlet&#10;2. HitPoints logic added - DmgServlet&#10;3. container for quest-text added - AllBlocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Choosing answers logic-starter added - LogicServlet&#10;2. HitPoints logic added - DmgServlet&#10;3. container for quest-text added - AllBlocks" />
   </component>
 </project>

@@ -11,27 +11,36 @@ public class AllBlocks {
         blocks.put(0, new Block(0,
                 0,
                 3,
-                "Вы очнулись на полу, кажется это склад, ваша голова раскалывается от боли, во рту привкус крови. Осмотревшись вы видите",
+                "очнулся",
 
-                "Попытаться позвать на помощь. ",
-                "Попытаться проникнуть в вентиляционную шахту ",
-                "Обыскать комнату. "
+                "option1 ",
+                "option1result",
+                "option2 ",
+                "option2result",
+                "option3 ",
+                "option3result"
         ));
         blocks.put(1, new Block(1,
-                0,
+                1,
                 3,
-                "Cabin2",
-                "go ",
-                "go ",
-                "go e"
+                "в коридоре",
+                "option1 ",
+                "option1result",
+                "option2 ",
+                "option2result",
+                "option3 ",
+                "option3result"
         ));
-        blocks.put(2, new Block(1,
-                0,
+        blocks.put(2, new Block(2,
+                1,
                 3,
                 "Cabin3",
-                "go ",
-                "go ",
-                "go "
+                "option1 ",
+                "option1result",
+                "option2 ",
+                "option2result",
+                "option3 ",
+                "option3result"
         ));
 
 
