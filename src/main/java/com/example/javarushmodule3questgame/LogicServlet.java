@@ -15,6 +15,7 @@ import java.io.IOException;
 @WebServlet (name = "LogicServlet", value = "/logic")
 public class LogicServlet extends HttpServlet {
 
+    private static final Logger log = LogManager.getLogger(LogicServlet.class);
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -23,6 +24,11 @@ public class LogicServlet extends HttpServlet {
         var index = getSelectedIndex(req);
         var sign = field.getField().get(index);
 
+        var data = field.getFieldData();
+        session.setAttribute("data", data);
+        session.setAttribute("field", field);
+        log.error("logicServlet -> main.jsp");
+        resp.sendRedirect("/main.jsp");
         }
 
     private Player extractField(HttpSession session) {
@@ -53,7 +59,7 @@ public class LogicServlet extends HttpServlet {
 
             session.setAttribute("data", data);
 
-            res.sendRedirect("/index.jsp");
+            res.sendRedirect("/main.jsp");
 
             return true;
 

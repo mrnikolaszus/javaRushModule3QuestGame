@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tic-Tac-Toe</title>
+    <title>Deep Space</title>
     <link href="main.css" rel="stylesheet">
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <script src="<c:url value="/jquery-3.6.0.min.js"/>"></script>
@@ -27,6 +27,12 @@
         </c:if>
 
     </div>
+    <div class="info">
+        <c:if test="${status == life}">
+            <button class="button" onclick="dmg()" >Got Damage!</button>
+        </c:if>
+
+    </div>
 
 
     <div class="table">
@@ -46,7 +52,19 @@
     <script>
         function restart() {
             $.ajax({
-                url: '/start',
+                url: '/restart',
+                type: 'POST',
+                contentType: 'application/json;charset=UTF-8',
+                async: false,
+                success: function () {
+                    location.reload();
+                }
+            });
+        }
+
+        function dmg() {
+            $.ajax({
+                url: '/dmg',
                 type: 'POST',
                 contentType: 'application/json;charset=UTF-8',
                 async: false,
@@ -56,6 +74,7 @@
             });
         }
     </script>
+
 </div>
 </body>
 </html>

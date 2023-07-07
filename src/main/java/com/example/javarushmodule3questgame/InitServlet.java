@@ -1,6 +1,9 @@
 package com.example.javarushmodule3questgame;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,7 +16,7 @@ import java.io.PrintWriter;
 
 @WebServlet(name = "InitServlet", value = "/start")
 public class InitServlet extends HttpServlet {
-
+    private static final Logger log = LogManager.getLogger(InitServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -25,7 +28,11 @@ public class InitServlet extends HttpServlet {
         session.setAttribute("field", field);
         session.setAttribute("data", data);
         session.setAttribute("status", statusSign);
-        getServletContext().getRequestDispatcher("/index.jsp").forward(req, resp);
+        log.error("game started " + this.getServletName());
+        log.error("game started " + this.getServletName());
+        log.error("game started " + this.getServletName());
+
+        getServletContext().getRequestDispatcher("/main.jsp").forward(req, resp);
 
 
     }
