@@ -14,6 +14,8 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Objects;
 
+import static com.example.javarushmodule3questgame.text.TextLogicGame.gameLogic;
+
 @WebServlet (name = "LogicServlet", value = "/logic")
 public class LogicServlet extends HttpServlet {
 
@@ -27,11 +29,11 @@ public class LogicServlet extends HttpServlet {
         var blocks = (AllBlocks) session.getAttribute("blocks");
 
 
-        if (gameLogic(click, currentBlock, session, blocks)){
+        if (!gameLogic(click, currentBlock, session, blocks)){
         resp.sendRedirect("/main.jsp");}
-        else {
+        else {  // dmg block: if buttonDmg true - minus one life
             Player field = extractField(session);
-            if(field.getField().get(0) == Sign.LIFE && field.getField().get(1) == Sign.DEATH && field.getField().get(2) == Sign.DEATH)
+            if((field.getField().get(0) == Sign.LIFE && field.getField().get(1) == Sign.DEATH && field.getField().get(2) == Sign.DEATH) )
             {
                 session.setAttribute("status", Sign.DEATH);
                 field.getField().replace(0, Sign.DEATH);
@@ -42,19 +44,15 @@ public class LogicServlet extends HttpServlet {
                 resp.sendRedirect("/main.jsp");
                 return;
             }
-
             field.getDmg(field);
             log.error(field.getFieldData());
             var data = field.getFieldData();
             session.setAttribute("data", data);
             session.setAttribute("field", field);
-
-
             log.error(" from DmgServlet -> main.jsp");
             resp.sendRedirect("/main.jsp");
-
             }
-
+        // END of dmg block: if buttonDmg true - minus one life
 
     }
     private Player extractField(HttpSession session) {
@@ -73,63 +71,5 @@ public class LogicServlet extends HttpServlet {
         return (Player) field;
     }
 
-    private boolean gameLogic(String click, Integer currentBlock, HttpSession session, AllBlocks blocks) {
 
-        //block0
-
-        if (currentBlock == 0 && click.equals("1")) {
-            session.setAttribute("text", "Вы кричите из-всех сил, но ответа нет. Что же делать дальше?");
-            return false;
-        }
-        if (currentBlock == 0 && click.equals("2")) {
-            session.setAttribute("text2", "Вы выбрались через шахту в большой склад.");
-            session.setAttribute("currentBlock", blocks.getField().get(1).getBlock());
-            session.setAttribute("buttons", blocks.getField().get(1).getButtons());
-            session.setAttribute("text", blocks.getField().get(1).getText());
-            session.setAttribute("button1", blocks.getField().get(1).getButton1());
-            session.setAttribute("button2", blocks.getField().get(1).getButton2());
-            session.setAttribute("button3", blocks.getField().get(1).getButton3());
-            return true;
-
-        }
-        if (currentBlock == 0 && click.equals("3")) {
-            session.setAttribute("text2", "Под одним из стелажей вы нашли ключ карту, на ней указано Капитан, неужели это вы?. Использовав ключ карту - дверь открылась");
-            session.setAttribute("currentBlock", blocks.getField().get(1).getBlock());
-            session.setAttribute("buttons", blocks.getField().get(1).getButtons());
-            session.setAttribute("text", blocks.getField().get(1).getText());
-            session.setAttribute("button1", blocks.getField().get(1).getButton1());
-            session.setAttribute("button2", blocks.getField().get(1).getButton2());
-            session.setAttribute("button3", blocks.getField().get(1).getButton3());
-            return true;
-        }
-
-
-        //block1
-
-        if (currentBlock == 1 && click.equals("1")) {
-            session.setAttribute("text", "Вы кричите из-всех сил, но ответа нет. Что же делать дальше?");
-            return false;
-        }
-        if (currentBlock == 1 && click.equals("2")) {
-            session.setAttribute("text2", "Вы выбрались через шахту в коридор.");
-            session.setAttribute("currentBlock", blocks.getField().get(1).getBlock());
-            session.setAttribute("buttons", blocks.getField().get(1).getButtons());
-            session.setAttribute("text", blocks.getField().get(1).getText());
-            session.setAttribute("button1", blocks.getField().get(1).getButton1());
-            session.setAttribute("button2", blocks.getField().get(1).getButton2());
-            session.setAttribute("button3", blocks.getField().get(1).getButton3());
-            return false;
-        }
-        if (currentBlock == 1 && click.equals("3")) {
-            session.setAttribute("text2", "Под одним из стелажей вы нашли ключ карту, на ней указано Капитан, неужели это вы?. Использовав ключ карту - дверь открылась");
-            session.setAttribute("currentBlock", blocks.getField().get(1).getBlock());
-            session.setAttribute("buttons", blocks.getField().get(1).getButtons());
-            session.setAttribute("text", blocks.getField().get(1).getText());
-            session.setAttribute("button1", blocks.getField().get(1).getButton1());
-            session.setAttribute("button2", blocks.getField().get(1).getButton2());
-            session.setAttribute("button3", blocks.getField().get(1).getButton3());
-            return false;
-        }
-        return false;
-    }
 }

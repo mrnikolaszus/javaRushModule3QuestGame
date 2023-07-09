@@ -9,9 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eba3d6b-9685-4a0c-9559-a4670404e687" name="Changes" comment="1. Choosing answers logic-starter added - LogicServlet&#10;2. HitPoints logic added - DmgServlet&#10;3. container for quest-text added - AllBlocks">
+    <list default="true" id="9eba3d6b-9685-4a0c-9559-a4670404e687" name="Changes" comment="added getDamage function in LogicServlet&#10;added more text info for game">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/TextLogicGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/InitServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/LogicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/LogicServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/AllBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/AllBlocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/Block.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
@@ -177,7 +181,8 @@
       <option name="presentableId" value="Default" />
       <updated>1688658284310</updated>
       <workItem from="1688658285409" duration="34863000" />
-      <workItem from="1688760211770" duration="4719000" />
+      <workItem from="1688760211770" duration="10665000" />
+      <workItem from="1688884353261" duration="4592000" />
     </task>
     <task id="LOCAL-00001" summary="Git init, sorry late init">
       <created>1688724859003</created>
@@ -200,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688752258623</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added getDamage function in LogicServlet&#10;added more text info for game">
+      <created>1688765034152</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688765034152</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +233,7 @@
     <MESSAGE value="Git init, sorry late init" />
     <MESSAGE value="Commit 001, bug with /start init" />
     <MESSAGE value="1. Choosing answers logic-starter added - LogicServlet&#10;2. HitPoints logic added - DmgServlet&#10;3. container for quest-text added - AllBlocks" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Choosing answers logic-starter added - LogicServlet&#10;2. HitPoints logic added - DmgServlet&#10;3. container for quest-text added - AllBlocks" />
+    <MESSAGE value="added getDamage function in LogicServlet&#10;added more text info for game" />
+    <option name="LAST_COMMIT_MESSAGE" value="added getDamage function in LogicServlet&#10;added more text info for game" />
   </component>
 </project>

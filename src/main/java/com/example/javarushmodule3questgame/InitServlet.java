@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Timer;
 
 
 @WebServlet(name = "InitServlet", value = "/start")
@@ -26,18 +28,23 @@ public class InitServlet extends HttpServlet {
         var blocks = new AllBlocks();
         session.setAttribute("alive", Sign.LIFE);
         var data = field.getFieldData();
+        var sessionID = session.getId();
         var statusSign = Sign.LIFE;
+        SimpleDateFormat formatter = new SimpleDateFormat("dd MMMM yyyy : z");
+        var date  = field.getDate();
+        session.setAttribute("date", formatter.format(date));
+        session.setAttribute("sessionID", sessionID);
         session.setAttribute("field", field);
         session.setAttribute("data", data);
         session.setAttribute("status", statusSign);
         session.setAttribute("text2", "");
         session.setAttribute("blocks", blocks);
         session.setAttribute("currentBlock", blocks.getField().get(0).getBlock());
-        session.setAttribute("buttons", blocks.getField().get(0).getButtons());
+        session.setAttribute("buttons", blocks.getField().get(0).getActiveButtonsQnt());
         session.setAttribute("text", blocks.getField().get(0).getText());
-        session.setAttribute("button1", blocks.getField().get(0).getButton1());
-        session.setAttribute("button2", blocks.getField().get(0).getButton2());
-        session.setAttribute("button3", blocks.getField().get(0).getButton3());
+        session.setAttribute("button1", blocks.getField().get(0).getButtonOne().getButton());
+        session.setAttribute("button2", blocks.getField().get(0).getButtonTwo().getButton());
+        session.setAttribute("button3", blocks.getField().get(0).getButtonThree().getButton());
 
 
 

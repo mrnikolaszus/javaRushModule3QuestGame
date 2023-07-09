@@ -5,27 +5,23 @@ import java.util.Objects;
 public class Block {
     private final int block;
     private final int stage;
-    private final int buttons;
+    private final int activeButtonsQnt;
     private final String text;
-    private final String button1;
-    private final String button1result;
-    private final String button2;
-    private final String button2result;
-    private final String button3;
-    private final String button3result;
+    private final Button buttonOne;
+    private final Button buttonTwo;
+    private final Button buttonThree;
 
-    public Block(int block, int stage, int buttons,  String text,  String button1, String button1result, String button2, String button2result, String button3, String button3result) {
+
+    public Block(int block, int stage, int activeButtonsQnt,  String text, Button buttonOne, Button buttonTwo, Button buttonThree) {
         this.block = block;
         this.stage = stage;
-        this.buttons = buttons;
+        this.activeButtonsQnt = activeButtonsQnt;
         this.text = text;
+        this.buttonOne = buttonOne;
+        this.buttonTwo = buttonTwo;
+        this.buttonThree = buttonThree;
 
-        this.button1 = button1;
-        this.button1result = button1result;
-        this.button2 = button2;
-        this.button2result = button2result;
-        this.button3 = button3;
-        this.button3result = button3result;
+
     }
 
     public int getBlock() {
@@ -35,26 +31,36 @@ public class Block {
         return stage;
     }
 
-    public int getButtons() {
-        return buttons;
+    public int getActiveButtonsQnt() {
+        return activeButtonsQnt;
     }
 
     public String getText() {
         return text;
     }
 
-    public String getButton1() {
-        return button1;
+    public Button getButtonOne() {
+        return buttonOne;
     }
 
-    public String getButton2() {
-        return button2;
+    public Button getButtonTwo() {
+        return buttonTwo;
     }
 
-    public String getButton3() {
-        return button3;
+    public Button getButtonThree() {
+        return buttonThree;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Block block1 = (Block) o;
+        return block == block1.block && stage == block1.stage && activeButtonsQnt == block1.activeButtonsQnt && Objects.equals(text, block1.text) && Objects.equals(buttonOne, block1.buttonOne) && Objects.equals(buttonTwo, block1.buttonTwo) && Objects.equals(buttonThree, block1.buttonThree);
+    }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(block, stage, activeButtonsQnt, text, buttonOne, buttonTwo, buttonThree);
+    }
 }

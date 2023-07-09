@@ -18,8 +18,9 @@
 <div class="page" >
 
     <header class = 'header'>
-        <h2>Quest</h2>
-        <h4>DeepSpace!</h4>
+    <h8>Date: ${date}</h8>
+        <br>
+    <h8>SessionId: ${sessionID}</h8>
     </header>
 
     <div class="info">

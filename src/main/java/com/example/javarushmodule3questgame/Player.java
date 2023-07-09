@@ -4,6 +4,8 @@ package com.example.javarushmodule3questgame;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -11,10 +13,15 @@ import java.util.stream.Collectors;
 
 
 public class Player {
+
+
+
+    private Date date;
     private static final Logger log = LogManager.getLogger(Player.class);
     private final Map<Integer, Sign> field;
 
     public Player() {
+        date = new Date();
         field = new HashMap<>();
         field.put(0, Sign.LIFE);
         field.put(1, Sign.LIFE);
@@ -47,6 +54,9 @@ public class Player {
 
             return false;
         }
+    }
+    public Date getDate() {
+        return date;
     }
 
 
