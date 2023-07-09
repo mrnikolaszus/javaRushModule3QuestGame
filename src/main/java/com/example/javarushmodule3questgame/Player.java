@@ -33,8 +33,6 @@ public class Player {
     }
 
     public boolean getDmg(Player p){
-
-
         if(p.field.get(2) == Sign.LIFE){
             p.field.replace(2, Sign.DEATH);
             return true;
@@ -49,9 +47,7 @@ public class Player {
 
             return true;
         }
-
         else {
-
             return false;
         }
     }

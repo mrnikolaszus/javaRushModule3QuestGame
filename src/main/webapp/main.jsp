@@ -3,6 +3,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Deep Space</title>
     <link href="main.css" rel="stylesheet">
@@ -10,22 +11,28 @@
     <script src="<c:url value="/jquery-3.6.0.min.js"/>"></script>
 </head>
 <body>
+
 <c:set var="life" value="<%=Sign.LIFE%>"/>
 <c:set var="death" value="<%=Sign.DEATH%>"/>
 
 
-
 <div class="page" >
-
     <header class = 'header'>
-    <h8>Date: ${date}</h8>
-        <br>
-    <h8>SessionId: ${sessionID}</h8>
+        <div class="headerL">
+            Test Quest Game
+        </div>
+
+        <div class="headerR">
+    <p>Date: ${date}</p>
+    <p>SessionId: ${sessionID}</p>
+        </div>
     </header>
+
+
 
     <div class="info">
         <c:if test="${ status == death }">
-            <button class="button" onclick="restart()" >Restart Game</button>
+            <button class="button-40" onclick="restart()" >Restart Game</button>
         </c:if>
 
     </div>
@@ -37,57 +44,27 @@
 <%--    </div>--%>
 
     <c:if test="${status == life}">
-        <form class="form-horizontal">
-            <fieldset>
-
-                <!-- Form Name -->
-                <legend>Тест ответов</legend>
-
-                <!-- Multiple Radios -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="answer">Ваш ответ:</label>
-                    <div class="col-md-4">
-                        <div class="radio">
-                            <label for="answer-0">
-                                <input type="radio" name="answer" id="answer-0" value="1" checked="checked">
-                                Option one
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label for="answer-1">
-                                <input type="radio" name="answer" id="answer-1" value="2">
-                                Option two
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label for="answer-2">
-                                <input type="radio" name="answer" id="answer-2" value="3">
-                                Option three
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-            </fieldset>
-        </form>
         <div class="main_text">
 
             <h3>${text2}</h3>
+            <h2>---------------------------</h2>
             <h3>${text}</h3>
+        </div>
+        <div>
             <c:if test="${buttons == 1}">
-                <button class="answerButton" onclick="window.location='/logic?click=1'">${button1}</button>
+                <button class="button-40" onclick="window.location='/logic?click=1'">${button1}</button>
             </c:if>
             <c:if test="${buttons == 2}">
-                <button class="answerButton" onclick="window.location='/logic?click=1'">${button1}</button>
-                <button class="answerButton" onclick="window.location='/logic?click=2'">${button2}</button>
+                <button class="button-40" onclick="window.location='/logic?click=1'">${button1}</button>
+                <button class="button-40" onclick="window.location='/logic?click=2'">${button2}</button>
             </c:if>
 
             <c:if test="${buttons == 3}">
             <table class="tableButtons">
                 <tr>
-                    <td > <button  class="answerButton" onclick="window.location='/logic?click=1'">${button1}</button></td>
-                    <td > <button class="answerButton" onclick="window.location='/logic?click=2'">${button2}</button></td>
-                    <td > <button class="answerButton" onclick="window.location='/logic?click=3'">${button3}</button></td>
+                    <td > <button  class="button-40" onclick="window.location='/logic?click=1'">${button1}</button></td>
+                    <td > <button class="button-40" onclick="window.location='/logic?click=2'">${button2}</button></td>
+                    <td > <button class="button-40" onclick="window.location='/logic?click=3'">${button3}</button></td>
                 </tr>
             </table>
             </c:if>
@@ -99,21 +76,20 @@
     <c:if test="${status == life}">
     <div class="table">
         <table>
-            <tr>
+            <tr >
 
-                <td >${data.get(0).getSign()}</td>
-                <td >${data.get(1).getSign()}</td>
-                <td >${data.get(2).getSign()}</td>
+                <td class="tableTr">${data.get(0).getSign()}</td>
+                <td class="tableTr">${data.get(1).getSign()}</td>
+                <td class="tableTr">${data.get(2).getSign()}</td>
             </tr>
         </table>
     </div>
     </c:if>
 
     <c:if test="${status == death}">
-        <div class="table">
-
-
-                    <h3>End game!</h3>
+        <div class="main_text">
+        <p> Внезапно в глазах потемнело. В последнюю секунду Вы осознали ошибку, но это уже неважно, Вас ждет бесконечность...</p>
+        <p> You are Dead.</p>
 
         </div>
     </c:if>
@@ -145,5 +121,6 @@
     </script>
 
 </div>
+
 </body>
 </html>

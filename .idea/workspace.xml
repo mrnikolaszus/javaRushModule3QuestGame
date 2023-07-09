@@ -10,7 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eba3d6b-9685-4a0c-9559-a4670404e687" name="Changes" comment="refactored: Block, Button.&#10;added instant death">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/background1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/manInSpace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/test.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/AllBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/AllBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/TextLogicGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/TextLogicGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop-newButtons" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,22 +65,28 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MSIN/IdeaProjects/javaRushModule3QuestGame/src/main/resources",
+    "last_opened_file_path": "C:/Users/MSIN/IdeaProjects/javaRushModule3QuestGame/src/main/webapp/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MSIN\IdeaProjects\javaRushModule3QuestGame\src\main\resources" />
+      <recent name="C:\Users\MSIN\IdeaProjects\javaRushModule3QuestGame\src\main\webapp\resources" />
       <recent name="C:\Users\MSIN\IdeaProjects\javaRushModule3QuestGame\src\main\webapp" />
+      <recent name="C:\Users\MSIN\IdeaProjects\javaRushModule3QuestGame\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MSIN\IdeaProjects\javaRushModule3QuestGame\src\main\webapp\resources" />
+      <recent name="C:\Users\MSIN\IdeaProjects\javaRushModule3QuestGame\src\main\webapp\static\src\main\resources" />
+      <recent name="C:\Users\MSIN\IdeaProjects\javaRushModule3QuestGame\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.javarushmodule3questgame" />
@@ -175,8 +190,7 @@
       <updated>1688658284310</updated>
       <workItem from="1688658285409" duration="34863000" />
       <workItem from="1688760211770" duration="10665000" />
-      <workItem from="1688884353261" duration="4923000" />
-      <workItem from="1688891244830" duration="344000" />
+      <workItem from="1688884353261" duration="4592000" />
     </task>
     <task id="LOCAL-00001" summary="Git init, sorry late init">
       <created>1688724859003</created>
@@ -206,14 +220,7 @@
       <option name="project" value="LOCAL" />
       <updated>1688765034152</updated>
     </task>
-    <task id="LOCAL-00005" summary="refactored: Block, Button.&#10;added instant death">
-      <created>1688890919143</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1688890919143</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +242,6 @@
     <MESSAGE value="Commit 001, bug with /start init" />
     <MESSAGE value="1. Choosing answers logic-starter added - LogicServlet&#10;2. HitPoints logic added - DmgServlet&#10;3. container for quest-text added - AllBlocks" />
     <MESSAGE value="added getDamage function in LogicServlet&#10;added more text info for game" />
-    <MESSAGE value="refactored: Block, Button.&#10;added instant death" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored: Block, Button.&#10;added instant death" />
+    <option name="LAST_COMMIT_MESSAGE" value="added getDamage function in LogicServlet&#10;added more text info for game" />
   </component>
 </project>
