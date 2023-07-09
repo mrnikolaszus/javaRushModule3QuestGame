@@ -37,6 +37,39 @@
 <%--    </div>--%>
 
     <c:if test="${status == life}">
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Тест ответов</legend>
+
+                <!-- Multiple Radios -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="answer">Ваш ответ:</label>
+                    <div class="col-md-4">
+                        <div class="radio">
+                            <label for="answer-0">
+                                <input type="radio" name="answer" id="answer-0" value="1" checked="checked">
+                                Option one
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="answer-1">
+                                <input type="radio" name="answer" id="answer-1" value="2">
+                                Option two
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="answer-2">
+                                <input type="radio" name="answer" id="answer-2" value="3">
+                                Option three
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
         <div class="main_text">
 
             <h3>${text2}</h3>
