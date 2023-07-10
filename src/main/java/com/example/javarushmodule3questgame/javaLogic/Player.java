@@ -1,10 +1,9 @@
-package com.example.javarushmodule3questgame;
+package com.example.javarushmodule3questgame.javaLogic;
 
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.text.DateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;

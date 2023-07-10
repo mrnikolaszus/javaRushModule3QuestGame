@@ -1,10 +1,11 @@
-package com.example.javarushmodule3questgame;
+package com.example.javarushmodule3questgame.servlets;
 
-import com.example.javarushmodule3questgame.text.AllBlocks;
+import com.example.javarushmodule3questgame.javaLogic.Player;
+import com.example.javarushmodule3questgame.javaLogic.Sign;
+import com.example.javarushmodule3questgame.textLogic.AllBlocks;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,9 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.Objects;
 
-import static com.example.javarushmodule3questgame.text.TextLogicGame.gameLogic;
+import static com.example.javarushmodule3questgame.textLogic.TextLogicGame.gameLogic;
 
 @WebServlet (name = "LogicServlet", value = "/logic")
 public class LogicServlet extends HttpServlet {

@@ -1,7 +1,8 @@
-package com.example.javarushmodule3questgame;
+package com.example.javarushmodule3questgame.servlets;
 
 
-import com.example.javarushmodule3questgame.text.AllBlocks;
+import com.example.javarushmodule3questgame.javaLogic.Player;
+import com.example.javarushmodule3questgame.javaLogic.Sign;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

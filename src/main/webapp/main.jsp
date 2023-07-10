@@ -1,4 +1,4 @@
-<%@ page import="com.example.javarushmodule3questgame.Sign" %>
+<%@ page import="com.example.javarushmodule3questgame.javaLogic.Sign" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -19,8 +19,22 @@
 <div class="page" >
     <header class = 'header'>
         <div class="headerL">
-            Test Quest Game
+            Test Quest Game:
+            <br>
+            SpaceShip under Attack!
         </div>
+        <c:if test="${status == life}">
+            <div class="table">
+                <table>
+                    <tr >
+                        <td class="tableTr"> Life HP: </td>
+                        <td class="tableTr">${data.get(0).getSign()}</td>
+                        <td class="tableTr">${data.get(1).getSign()}</td>
+                        <td class="tableTr">${data.get(2).getSign()}</td>
+                    </tr>
+                </table>
+            </div>
+        </c:if>
 
         <div class="headerR">
     <p>Date: ${date}</p>
@@ -73,18 +87,7 @@
 
         </div>
     </c:if>
-    <c:if test="${status == life}">
-    <div class="table">
-        <table>
-            <tr >
 
-                <td class="tableTr">${data.get(0).getSign()}</td>
-                <td class="tableTr">${data.get(1).getSign()}</td>
-                <td class="tableTr">${data.get(2).getSign()}</td>
-            </tr>
-        </table>
-    </div>
-    </c:if>
 
     <c:if test="${status == death}">
         <div class="main_text">

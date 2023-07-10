@@ -9,18 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eba3d6b-9685-4a0c-9559-a4670404e687" name="Changes" comment="refactored: Block, Button.&#10;added instant death">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/background1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/manInSpace.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/test.png" afterDir="false" />
+    <list default="true" id="9eba3d6b-9685-4a0c-9559-a4670404e687" name="Changes" comment="Chapter One Finished&#10;BetaTest 0000.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/AllBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/AllBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/TextLogicGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/TextLogicGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/DmgServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/DmgServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/InitServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/LogicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/LogicServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/javaLogic/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/RestartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/RestartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Sign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/javaLogic/Sign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/AllBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/AllBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/TextLogicGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/TextLogicGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/test.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688765034152</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Chapter One Finished&#10;BetaTest 0000.1">
+      <created>1688940954736</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688940954736</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +252,7 @@
     <MESSAGE value="Commit 001, bug with /start init" />
     <MESSAGE value="1. Choosing answers logic-starter added - LogicServlet&#10;2. HitPoints logic added - DmgServlet&#10;3. container for quest-text added - AllBlocks" />
     <MESSAGE value="added getDamage function in LogicServlet&#10;added more text info for game" />
-    <option name="LAST_COMMIT_MESSAGE" value="added getDamage function in LogicServlet&#10;added more text info for game" />
+    <MESSAGE value="Chapter One Finished&#10;BetaTest 0000.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter One Finished&#10;BetaTest 0000.1" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.example.javarushmodule3questgame;
+package com.example.javarushmodule3questgame.javaLogic;
 
 public enum Sign {
     LIFE('♥'),

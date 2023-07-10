@@ -1,4 +1,4 @@
-package com.example.javarushmodule3questgame;
+package com.example.javarushmodule3questgame.servlets;
 
 
 import org.apache.logging.log4j.LogManager;

@@ -1,4 +1,4 @@
-package com.example.javarushmodule3questgame.text;
+package com.example.javarushmodule3questgame.textLogic;
 
 import java.util.Objects;
 

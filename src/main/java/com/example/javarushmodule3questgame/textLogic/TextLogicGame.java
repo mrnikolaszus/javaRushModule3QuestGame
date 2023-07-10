@@ -1,6 +1,6 @@
-package com.example.javarushmodule3questgame.text;
+package com.example.javarushmodule3questgame.textLogic;
 
-import com.example.javarushmodule3questgame.Sign;
+import com.example.javarushmodule3questgame.javaLogic.Sign;
 
 import javax.servlet.http.HttpSession;
 
