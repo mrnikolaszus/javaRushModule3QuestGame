@@ -9,21 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eba3d6b-9685-4a0c-9559-a4670404e687" name="Changes" comment="Chapter One Finished&#10;BetaTest 0000.1">
+    <list default="true" id="9eba3d6b-9685-4a0c-9559-a4670404e687" name="Changes" comment="some design changes&#10;BetaTest 0.2">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/javarushmodule3questgame/javaLogic/PlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/javarushmodule3questgame/javaLogic/SignTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/javarushmodule3questgame/servlets/InitServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/javarushmodule3questgame/servlets/LogicServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/javarushmodule3questgame/servlets/RestartServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/javarushmodule3questgame/textLogic/BlockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/javarushmodule3questgame/textLogic/ButtonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/DmgServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/DmgServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/InitServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/LogicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/LogicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/javaLogic/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/RestartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/RestartServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/Sign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/javaLogic/Sign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/AllBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/AllBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/text/TextLogicGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/TextLogicGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/javaLogic/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/javaLogic/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/javaLogic/Sign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/javaLogic/Sign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/InitServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/LogicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/servlets/LogicServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/AllBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/AllBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/TextLogicGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javarushmodule3questgame/textLogic/TextLogicGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/test.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -68,7 +73,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MSIN/IdeaProjects/javaRushModule3QuestGame/src/main/webapp/resources",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/MSIN/IdeaProjects/javaRushModule3QuestGame/src/test/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,7 +83,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "d96d87677e231bc65579a1a23783f570",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -91,11 +99,110 @@
       <recent name="C:\Users\MSIN\IdeaProjects\javaRushModule3QuestGame\src\main\webapp\static\src\main\resources" />
       <recent name="C:\Users\MSIN\IdeaProjects\javaRushModule3QuestGame\src" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.javarushmodule3questgame.servlets" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.javarushmodule3questgame.servlets" />
+      <recent name="com.example.javarushmodule3questgame.textLogic" />
+      <recent name="com.example.javarushmodule3questgame.javaLogic" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.javarushmodule3questgame" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.75">
+    <configuration name="InitServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaRushModule3QuestGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.javarushmodule3questgame.servlets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.javarushmodule3questgame.servlets" />
+      <option name="MAIN_CLASS_NAME" value="com.example.javarushmodule3questgame.servlets.InitServletTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InitServletTest.doGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaRushModule3QuestGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.javarushmodule3questgame.servlets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.javarushmodule3questgame.servlets" />
+      <option name="MAIN_CLASS_NAME" value="com.example.javarushmodule3questgame.servlets.InitServletTest" />
+      <option name="METHOD_NAME" value="doGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogicServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaRushModule3QuestGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.javarushmodule3questgame.servlets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.javarushmodule3questgame.servlets" />
+      <option name="MAIN_CLASS_NAME" value="com.example.javarushmodule3questgame.servlets.LogicServletTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogicServletTest.doGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaRushModule3QuestGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.javarushmodule3questgame.servlets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.javarushmodule3questgame.servlets" />
+      <option name="MAIN_CLASS_NAME" value="com.example.javarushmodule3questgame.servlets.LogicServletTest" />
+      <option name="METHOD_NAME" value="doGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewConfigurationn" type="JUnit" factoryName="JUnit">
+      <module name="javaRushModule3QuestGame" />
+      <extension name="coverage" runner="jacoco" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestartServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaRushModule3QuestGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.javarushmodule3questgame.servlets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.javarushmodule3questgame.servlets" />
+      <option name="MAIN_CLASS_NAME" value="com.example.javarushmodule3questgame.servlets.RestartServletTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="javaRushModule3QuestGame:war exploded">
@@ -182,6 +289,24 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.NewConfigurationn" />
+      <item itemvalue="JUnit.LogicServletTest" />
+      <item itemvalue="JUnit.LogicServletTest.doGet" />
+      <item itemvalue="JUnit.RestartServletTest" />
+      <item itemvalue="JUnit.InitServletTest" />
+      <item itemvalue="JUnit.InitServletTest.doGet" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.75" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LogicServletTest.doGet" />
+        <item itemvalue="JUnit.LogicServletTest" />
+        <item itemvalue="JUnit.InitServletTest" />
+        <item itemvalue="JUnit.InitServletTest.doGet" />
+        <item itemvalue="JUnit.RestartServletTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -194,6 +319,15 @@
       <workItem from="1688658285409" duration="34863000" />
       <workItem from="1688760211770" duration="10665000" />
       <workItem from="1688884353261" duration="4592000" />
+      <workItem from="1689249734452" duration="75000" />
+      <workItem from="1689258200597" duration="1239000" />
+      <workItem from="1689530361788" duration="619000" />
+      <workItem from="1689593562051" duration="1239000" />
+      <workItem from="1689608274606" duration="1477000" />
+      <workItem from="1689676630194" duration="784000" />
+      <workItem from="1689778660129" duration="1219000" />
+      <workItem from="1689932770862" duration="18095000" />
+      <workItem from="1689964100269" duration="7222000" />
     </task>
     <task id="LOCAL-00001" summary="Git init, sorry late init">
       <created>1688724859003</created>
@@ -230,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688940954736</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="some design changes&#10;BetaTest 0.2">
+      <created>1688998248867</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688998248867</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +394,31 @@
     <MESSAGE value="1. Choosing answers logic-starter added - LogicServlet&#10;2. HitPoints logic added - DmgServlet&#10;3. container for quest-text added - AllBlocks" />
     <MESSAGE value="added getDamage function in LogicServlet&#10;added more text info for game" />
     <MESSAGE value="Chapter One Finished&#10;BetaTest 0000.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter One Finished&#10;BetaTest 0000.1" />
+    <MESSAGE value="some design changes&#10;BetaTest 0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="some design changes&#10;BetaTest 0.2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/javarushmodule3questgame/javaLogic/PlayerTest.java</url>
+          <line>41</line>
+          <properties class="com.example.javarushmodule3questgame.javaLogic.PlayerTest" method="getDmgComplexTestSorryTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/javarushmodule3questgame/servlets/RestartServletTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/javaRushModule3QuestGame$All_in_javaRushModule3QuestGame.ic" NAME="All in javaRushModule3QuestGame Coverage Results" MODIFIED="1689944004824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/javaRushModule3QuestGame$NewConfigurationn.exec" NAME="NewConfigurationn Coverage Results" MODIFIED="1689967450134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

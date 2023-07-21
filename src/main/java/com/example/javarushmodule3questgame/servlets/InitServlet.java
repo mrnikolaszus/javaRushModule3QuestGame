@@ -22,6 +22,7 @@ public class InitServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        log.error(req.toString() + " test " + resp.toString());
         var session = req.getSession(true);
         var field = new Player();
         var blocks = new AllBlocks();
@@ -29,14 +30,16 @@ public class InitServlet extends HttpServlet {
         var data = field.getFieldData();
         var sessionID = session.getId();
         var statusSign = Sign.LIFE;
+
         SimpleDateFormat formatter = new SimpleDateFormat("dd MMMM yyyy : z");
         var date  = field.getDate();
         session.setAttribute("date", formatter.format(date));
         session.setAttribute("sessionID", sessionID);
+        session.setAttribute("endRestart", Sign.LIFE);
         session.setAttribute("field", field);
         session.setAttribute("data", data);
         session.setAttribute("status", statusSign);
-        session.setAttribute("text2", "");
+        session.setAttribute("text2", "В недалеком будущем, где-то в глубинах космоса, на исследовательском космическом корабле...");
         session.setAttribute("blocks", blocks);
         session.setAttribute("currentBlock", blocks.getField().get(0).getBlock());
         session.setAttribute("buttons", blocks.getField().get(0).getActiveButtonsQnt());
@@ -49,7 +52,7 @@ public class InitServlet extends HttpServlet {
 
 
 
-        log.error("game started " + this.getServletName());
+        log.error("game started");
         resp.sendRedirect("/main.jsp");
 
 //        getServletContext().getRequestDispatcher("/main.jsp").forward(req, resp);

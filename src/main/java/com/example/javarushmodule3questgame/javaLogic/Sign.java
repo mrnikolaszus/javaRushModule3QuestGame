@@ -1,8 +1,10 @@
+
 package com.example.javarushmodule3questgame.javaLogic;
 
 public enum Sign {
     LIFE('♥'),
-    DEATH('✘');
+    DEATH('✘'),
+    RESTART('R');
 
     private final char sign;
 

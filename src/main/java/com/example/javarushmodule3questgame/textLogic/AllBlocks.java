@@ -89,11 +89,12 @@ public class AllBlocks {
 
         blocks.put(8, new Block(8,
                 8,
-                3,
-                "Вы заходите на главный мостик и перед вами:.... конец первой части",
+                0,
+                "Вы заходите на главный мостик и перед вами:.... Конец первой части. Поздравляем вы прошли первую часть, Спасибо за игру.",
+                new Button("Начать Заново", "8", false, false ),
                 new Button("Конец", "8", false, false ),
-                new Button("Поздравляем", "8", false, false),
-                new Button("Конец", "8.", false, false)
+                new Button("Конец", "8", false, false )
+
         ));
 
         blocks.put(9, new Block(9,

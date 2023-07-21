@@ -15,7 +15,7 @@ public class Player {
 
 
 
-    private Date date;
+    private final Date date;
     private static final Logger log = LogManager.getLogger(Player.class);
     private final Map<Integer, Sign> field;
 

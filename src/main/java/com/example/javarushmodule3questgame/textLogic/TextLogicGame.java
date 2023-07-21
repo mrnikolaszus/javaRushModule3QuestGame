@@ -336,6 +336,7 @@ public class TextLogicGame {
             session.setAttribute("button1", blocks.getField().get(8).getButtonOne().getButton());
             session.setAttribute("button2", blocks.getField().get(8).getButtonTwo().getButton());
             session.setAttribute("button3", blocks.getField().get(8).getButtonThree().getButton());
+            session.setAttribute("endRestart", Sign.RESTART);
 
             if(blocks.getField().get(7).getButtonOne().isButtonDeath()){  //this block result
                 session.setAttribute("status", Sign.DEATH); }
@@ -352,6 +353,7 @@ public class TextLogicGame {
             session.setAttribute("button1", blocks.getField().get(8).getButtonOne().getButton());
             session.setAttribute("button2", blocks.getField().get(8).getButtonTwo().getButton());
             session.setAttribute("button3", blocks.getField().get(8).getButtonThree().getButton());
+            session.setAttribute("endRestart", Sign.RESTART);
 
             if(blocks.getField().get(7).getButtonTwo().isButtonDeath()){ //this block result
                 session.setAttribute("status", Sign.DEATH); }
@@ -376,7 +378,7 @@ public class TextLogicGame {
 
         //block8
 
-//        if (currentBlock == 7 && click.equals("1")) {
+//        if (currentBlock == 8 && click.equals("1")) {
 //            session.setAttribute("text2", blocks.getField().get(7).getButtonOne().getButtonResult()); //this block result
 //
 //            //move to other block
@@ -870,4 +872,6 @@ public class TextLogicGame {
         return false;
 
     }
+
+
 }

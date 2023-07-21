@@ -14,6 +14,7 @@
 
 <c:set var="life" value="<%=Sign.LIFE%>"/>
 <c:set var="death" value="<%=Sign.DEATH%>"/>
+<c:set var="restart" value="<%=Sign.RESTART%>"/>
 
 
 <div class="page" >
@@ -23,7 +24,7 @@
             <br>
             SpaceShip under Attack!
         </div>
-        <c:if test="${status == life}">
+        <c:if test="${status == life }">
             <div class="table">
                 <table>
                     <tr >
@@ -45,7 +46,7 @@
 
 
     <div class="info">
-        <c:if test="${ status == death }">
+        <c:if test="${ status == death || endRestart == restart }">
             <button class="button-40" onclick="restart()" >Restart Game</button>
         </c:if>
 
